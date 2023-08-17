@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: 'Pacifico', cursive;
+  background-image: url("background.jpg");
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 2%;
+  padding-left: 5%;
+}
+
+.container h1 {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  text-shadow: 1px 1px 2px rgb(240, 146, 162);
+  color: white;
+}
+
+.container img {
+  width: 60px;
+  height: 60px;
+}
+
+.button-92 {
+  --c: #fff;
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    #c69bd6;
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
+}
+
+.button-92:hover,
+.button-92:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button-92:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+.magazynNotatki {
+  margin-top: 10px;
+  width: 400px;
+  height: 160px; 
+  background-color: #ddb0ee;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+  border-radius: 50px 0;
+  box-shadow: 5px 5px 5px rgb(218, 161, 233);
+  gap: 10px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.duza_notatka {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.notatki_tekst {
+  margin-top: 5px;
+  margin-right: 100px;
+  height: 300px;
+  width: 700px;
+  box-shadow: 5px 5px 5px rgb(218, 161, 233);
+  border-radius: 5px;
+}
+
+.notatki_tytul {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 83vh;
+  margin-top: 40px;
+}
+
+.notatki-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.clock {
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+}
+button.zapisz-button,
+button.usun-button,
+button.edytuj-button,
+button.wyczysc-tekst,
+button.wyczysc-tytul {
+  height: 30px;
+  background-color: rgb(255, 91, 91);
+  border-radius: 15px;
+  font-size: 12px;
+  margin-top: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 20%; 
+}
+button.zapisz-button,
+button.usun-button:hover,
+button.edytuj-button:hover,
+button.wyczysc-tekst:hover,
+button.wyczysc-tytul:hover {
+  background-color: rgb(204, 0, 0);
+}
+
+button.wyczysc-tekst,
+button.wyczysc-tytul {
+  font-size: 10px;
+  height: 25px;
+}
